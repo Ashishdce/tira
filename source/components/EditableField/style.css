@@ -1,0 +1,73 @@
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+.editable-field__container {
+  display: flex;
+  align-items: center;
+}
+
+.editable-field__input, .editable-field__text {
+  font-size: 1.25em;
+  color: #00579b;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  min-width: 220px;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  max-width: 220px;
+}
+
+.editable-field__icons-wrapper {
+  display: flex;
+  margin-left: 15px;
+}
+
+.editable-field__button {
+  height: 23px;
+  width: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.type__list  .editable-field__content {
+  flex-grow: 1;
+}
+
+.type__list  .editable-field__input, .type__list   .editable-field__text {
+  font-size: .875em;
+  color: #5e6268;
+  font-weight: 600;
+}
+
+.type__list .editable-field__button {
+  height: 18px;
+  width: 18px;
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+[hidden] {
+  display: none;
+}
